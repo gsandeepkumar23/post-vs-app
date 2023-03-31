@@ -5,7 +5,7 @@ import traceback
 
 app = Flask(__name__)
 
-openai.api_key = "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"
+openai.api_key = ""
 
 model_engine = "text-davinci-003"
 
