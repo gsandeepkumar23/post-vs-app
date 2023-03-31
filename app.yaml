@@ -1,0 +1,16 @@
+runtime: python38
+
+entrypoint: gunicorn -b :$PORT --timeout 75 main:app
+
+env_variables:
+  OPENAI_API_KEY: "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"
+  OPENAI_MODEL_ENGINE: "text-davinci-003"
+
+instance_class: B8
+manual_scaling:
+  instances: 10
+
+service: sacralai5
+
+
+
